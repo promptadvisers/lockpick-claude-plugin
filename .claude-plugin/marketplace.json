@@ -1,0 +1,16 @@
+{
+  "name": "promptadvisers-lockpick",
+  "owner": {
+    "name": "Prompt Advisers"
+  },
+  "metadata": {
+    "description": "The Lockpick plugin for Claude: authorized website security checks and guided fixes."
+  },
+  "plugins": [
+    {
+      "name": "lockpick",
+      "source": "./",
+      "description": "Scan your app, site, or AI skill before you ship."
+    }
+  ]
+}

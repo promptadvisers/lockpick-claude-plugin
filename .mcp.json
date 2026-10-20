@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "lockpick": {
+      "type": "http",
+      "url": "https://mcp.lockpick.app/mcp"
+    }
+  }
+}

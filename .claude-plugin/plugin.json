@@ -1,0 +1,27 @@
+{
+  "name": "lockpick",
+  "displayName": "Lockpick",
+  "version": "0.2.0",
+  "description": "Scan your app, site, or AI skill before you ship.",
+  "author": {
+    "name": "Prompt Advisers",
+    "url": "https://www.lockpick.app"
+  },
+  "homepage": "https://www.lockpick.app/en/claude",
+  "repository": "https://github.com/promptadvisers/lockpick-claude-plugin",
+  "license": "MIT",
+  "keywords": [
+    "security",
+    "website-security",
+    "dns",
+    "pulse",
+    "deep-scan",
+    "repair",
+    "lockpick"
+  ],
+  "icon": "./assets/graphite-lock.webp",
+  "documentationUrl": "https://www.lockpick.app/en/claude",
+  "supportUrl": "https://www.lockpick.app/en/claude",
+  "privacyPolicyUrl": "https://www.lockpick.app/en/privacy",
+  "termsOfServiceUrl": "https://www.lockpick.app/en/terms"
+}
