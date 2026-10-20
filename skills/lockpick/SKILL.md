@@ -5,11 +5,11 @@ description: Use when the user asks to use Lockpick, connect their account, insp
 
 # Lockpick
 
-Use Lockpick to request hosted assessments of public websites and read their results. Lockpick runs every assessment on its own infrastructure. You never run a scanner yourself.
+Use Lockpick to request hosted assessments of public websites, GitHub repositories and AI skills and read their results. Lockpick runs every assessment on its own infrastructure. You never run a scanner yourself.
 
 ## Choose the task
 
-- Homepage quick check, Pulse or Deep: use lockpick-scan.
+- Homepage quick check, public repository or AI skill check, Pulse or Deep: use lockpick-scan.
 - Code changes from findings: use lockpick-fix.
 - DNS findings: use lockpick-dns.
 - Explain a report: use lockpick-explain.
@@ -29,6 +29,7 @@ Permissions arrive in steps. A new connection can only read. Adding sites, start
 Read tools are free. Before quoting a cost, read lockpick_get_allowance and use its live numbers. The rules behind those numbers:
 
 - A homepage quick check is free.
+- A free public repository or AI skill check uses no Pulse scan. A Deep repository check uses one Deep scan and needs an explicit request.
 - A Pulse uses one Pulse scan from the monthly allowance.
 - A Deep scan uses one Deep scan from the monthly allowance.
 - A full recheck costs the same as a new scan at its depth.

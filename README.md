@@ -1,6 +1,6 @@
 # Lockpick for Claude
 
-Lockpick checks public websites you own or have permission to test. Use it from Claude to request a homepage quick check, run a Pulse, prepare a Deep scan, read findings, and work through repair guidance.
+Scan your app, site, or AI skill before you ship. Lockpick checks public websites you own or have permission to test, and statically reviews public GitHub repositories, AI skills, plugins and MCP servers without installing or running them. Use it from Claude to request a check, read findings, and work through repair guidance.
 
 ## Connect
 
@@ -13,6 +13,7 @@ On Team and Enterprise plans, an organization Owner may need to make the connect
 ## Try it
 
 - "Run a Pulse on my site."
+- "Check this public GitHub skill before I install it."
 - "Explain the top three findings."
 - "Go deeper on this site."
 - "Fix what Lockpick found in this repository."
@@ -23,7 +24,7 @@ Deep requires DNS or file proof of ownership and your approval of the specific s
 
 | Command             | What it does                                             |
 | ------------------- | -------------------------------------------------------- |
-| `/lockpick:check`   | Quick check of a homepage                                |
+| `/lockpick:check`   | Quick check of a homepage or public GitHub repository     |
 | `/lockpick:pulse`   | Run a Pulse on a site you are authorized to test         |
 | `/lockpick:deep`    | Prove ownership, approve and run a Deep scan             |
 | `/lockpick:fix`     | Apply the repair brief to the current repository         |
@@ -37,6 +38,7 @@ In Cowork and Claude Code, commands start the matching skill. Chat loads command
 Read tools are free. Scan costs and remaining allowance come from your connected Lockpick account, and Claude reads them before quoting a cost.
 
 - A homepage quick check is free.
+- A free repository or AI skill check uses no Pulse scan. An explicitly requested Deep repository check uses one Deep scan.
 - A Pulse uses one Pulse scan from the monthly allowance.
 - A Deep scan uses one Deep scan from the monthly allowance.
 - A full recheck counts as a scan and costs the same as its depth.
