@@ -24,7 +24,7 @@ Deep requires DNS or file proof of ownership and your approval of the specific s
 
 | Command             | What it does                                             |
 | ------------------- | -------------------------------------------------------- |
-| `/lockpick:check`   | Quick check of a homepage or public GitHub repository     |
+| `/lockpick:check`   | Quick check of a homepage or public GitHub repository    |
 | `/lockpick:pulse`   | Run a Pulse on a site you are authorized to test         |
 | `/lockpick:deep`    | Prove ownership, approve and run a Deep scan             |
 | `/lockpick:fix`     | Apply the repair brief to the current repository         |
