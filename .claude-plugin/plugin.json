@@ -1,7 +1,7 @@
 {
   "name": "lockpick",
   "displayName": "Lockpick",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "description": "Scan your app, site, or AI skill before you ship.",
   "author": {
     "name": "Prompt Advisers",

@@ -31,7 +31,7 @@ Deep requires DNS or file proof of ownership and your approval of the specific s
 | `/lockpick:recheck` | Recheck a deployed fix, or run the free DNS check again  |
 | `/lockpick:status`  | Show the connected workspace, sites, scans and allowance |
 
-In Cowork and Claude Code, commands start the matching skill. Chat loads commands as skills rather than slash commands; ask in your own words. The fixer agent is available in Cowork and Claude Code. In chat without repository access, Claude explains or drafts a repair.
+In Cowork and Claude Code, commands start the matching skill. Chat loads commands as skills rather than slash commands; ask in your own words. The fixer agent can prepare authorized file edits in Cowork and Claude Code. In chat without repository access, Claude explains or drafts a repair. This directory build executes assessments only through the declared Lockpick MCP server. It never runs local code, tests, package installers or Git commands. It gives you verification commands to run yourself and reports those checks as unperformed until you supply results.
 
 ## Costs
 
@@ -48,7 +48,7 @@ Read tools are free. Scan costs and remaining allowance come from your connected
 
 The connector receives the arguments needed for the tools you request, such as site URLs, site IDs, and scan IDs. Lockpick stores account, authorization, assessment, and operational records as described in its privacy policy. It returns findings, redacted evidence, coverage, status, and repair guidance to Claude. It never returns how Lockpick runs its assessments internally.
 
-The connector does not request your full conversation history. Do not put passwords, private keys, or unrelated personal information into tool inputs. Repository edits happen in the Claude environment where you requested them, and Claude commits only when you allow it.
+The connector does not request your full conversation history. Do not put passwords, private keys, or unrelated personal information into tool inputs. Repository edits happen in the Claude environment where you requested them. Run tests, commits and deployments yourself outside this plugin workflow.
 
 If a connection expires, reconnect through Claude's connector settings, then verify the connected workspace before retrying. Remove the connector there to disconnect Claude. Revoke its authorization in Lockpick Workspace settings. Your workspace and project permissions continue to limit access. Revoking a connection does not delete past assessments.
 

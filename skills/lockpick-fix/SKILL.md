@@ -17,16 +17,13 @@ Find the real framework, server, proxy, CDN and deployment configuration in the 
 
 ## Make the smallest justified change
 
-- Work on a branch. Change only what the finding needs.
-- Preserve what already works: sign-in, payments, embeds, analytics and third-party scripts the site depends on. For a content security policy, start in report-only mode when the brief suggests it.
-- Add a regression test or a check where the project has a place for one, for example asserting a response header.
-- For leaked secrets, removing the value from code is not enough. Tell the user the key must be rotated at its provider, and let them do it.
+Make only file edits the user authorized. Preserve working sign-in, payments, embeds, analytics and third-party scripts. Do not create or switch a branch with Git; tell the user when a branch is needed. Draft a regression check when the repository has a place for one. For leaked credentials, explain the required provider-side rotation; removing a value alone does not revoke it.
 
-## Commits and external steps
+## Verification and external steps
 
-Keep changes reviewable and separate unrelated concerns. Test changed behavior. Commit only when the user has authorized commits and the repository instructions permit them.
+Keep changes reviewable and separate unrelated concerns. Do not execute local code, shell commands, tests, package installers, scanners or Git commands. Assessments run only through the declared Lockpick MCP server. Draft relevant regression tests as files when appropriate, then give the user the exact commands to run. Report verification as pending until the user supplies results. Never claim tests passed or commits were made without evidence.
 
-List DNS, provider-dashboard, credential and other human-only steps. Do not deploy, rotate credentials or change external accounts without the user's authorization for that step.
+List DNS, provider-dashboard, credential and other human-only steps. Leave deployments, commits, credential rotation and external account changes to the user outside this plugin workflow.
 
 ## Recheck
 
@@ -34,4 +31,4 @@ After the user deploys, offer a recheck with its live cost from lockpick_get_all
 
 ## Hand back
 
-Return the changed files, the verification performed, the unresolved steps and the Lockpick report link. Never include internal Lockpick execution details.
+Return the changed files, the verification still required, the unresolved steps and the Lockpick report link. Never include internal Lockpick execution details.
